@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Roadmap Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🚀 AI Roadmap Generator</div>
+        <p>Personalized Learning Path Generator</p>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Build Your Learning Roadmap</h1>
+
+            <p>
+                Enter your goal and get a personalized learning path.
+            </p>
+        </section>
+
+
+        <section class="form-container">
+
+            <label for="goal">🎯 What do you want to learn?</label>
+
+            <input
+                type="text"
+                id="goal"
+                placeholder="Example: Web Development"
+            >
+
+
+            <label for="level">📊 Your Current Level</label>
+
+            <select id="level">
+
+                <option value="Beginner">Beginner</option>
+
+                <option value="Intermediate">
+                    Intermediate
+                </option>
+
+                <option value="Advanced">
+                    Advanced
+                </option>
+
+            </select>
+
+
+            <label for="time">⏰ Daily Study Time</label>
+
+            <select id="time">
+
+                <option value="1 Hour">
+                    1 Hour
+                </option>
+
+                <option value="2 Hours">
+                    2 Hours
+                </option>
+
+                <option value="3 Hours">
+                    3 Hours
+                </option>
+
+                <option value="4+ Hours">
+                    4+ Hours
+                </option>
+
+            </select>
+
+
+            <button onclick="generateRoadmap()">
+                🚀 Generate Roadmap
+            </button>
+
+        </section>
+
+
+        <section id="roadmap-section" class="roadmap-section">
+
+            <h2>📚 Your Personalized Roadmap</h2>
+
+            <div id="roadmap"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 AI Roadmap Generator | Mini Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
